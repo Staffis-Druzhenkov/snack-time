@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Snack Time</title>
+  <meta name="description" content="Контакты кафе Snack Time: адрес, телефон, часы работы и карта проезда.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%AF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">🌯</span>
+        <span>Snack <em>Time</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="promos.html">Акции</a></li>
+          <li><a class="active" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация">
+        <ul>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="promos.html">Акции</a></li>
+          <li><a class="active" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container">
+        <a class="back-home" href="index.html">← На главную</a>
+        <h1>Контакты</h1>
+        <p>Мы всегда рады гостям — заходите, звоните, пишите!</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container contacts-layout">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true">📍</span>
+            <div>
+              <h3>Адрес</h3>
+              <p>Могилёв, улица Гришина, 61</p>
+            </div>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true">📞</span>
+            <div>
+              <h3>Телефон</h3>
+              <a href="tel:PHONE_1f302616">+375 44 747-23-23</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true">🕒</span>
+            <div>
+              <h3>Часы работы</h3>
+              <p>Ежедневно с 8:00 до 22:00</p>
+            </div>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true">💬</span>
+            <div>
+              <h3>Instagram</h3>
+              <div class="socials">
+                <a href="https://www.instagram.com/snack.time.mogilev" target="_blank" rel="noopener">📷 @snack.time.mogilev</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="map-wrap">
+          <iframe
+            src="https://yandex.by/map-widget/v1/?ll=30.355133%2C53.927459&z=17&pt=30.355133,53.927459,pm2rdm"
+            title="Кафе Snack Time на карте"
+            allowfullscreen
+            loading="lazy"></iframe>
+          <a class="map-open" href="https://yandex.by/maps/-/CXrYyJll" target="_blank" rel="noopener">Открыть в Яндекс.Картах ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">🌯</span>
+        <span>Snack <em>Time</em></span>
+      </a>
+      <div class="footer-copy">© <span id="year">2025</span> Snack Time. Сделано с ❤️ и лавашом.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

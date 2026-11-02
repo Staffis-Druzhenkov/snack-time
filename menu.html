@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Меню — Snack Time</title>
+  <meta name="description" content="Меню кафе Snack Time: шаурма, блины и напитки. Цены, составы и хиты недели.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%AF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">🌯</span>
+        <span>Snack <em>Time</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a class="active" href="menu.html">Меню</a></li>
+          <li><a href="promos.html">Акции</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация">
+        <ul>
+          <li><a class="active" href="menu.html">Меню</a></li>
+          <li><a href="promos.html">Акции</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container">
+        <a class="back-home" href="index.html">← На главную</a>
+        <h1>Наше меню</h1>
+        <p>Всё готовим после вашего заказа — никаких заготовок. Выбирайте категорию:</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tabs" role="tablist" aria-label="Категории меню">
+        <button class="tab-btn active" role="tab" aria-selected="true" data-tab="shawarma" id="tab-shawarma" aria-controls="shawarma">🌯 Шаурма</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="pancakes" id="tab-pancakes" aria-controls="pancakes">🥞 Блины</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="drinks" id="tab-drinks" aria-controls="drinks">☕ Напитки</button>
+      </div>
+
+      <section class="tab-panel active" role="tabpanel" id="shawarma" aria-labelledby="tab-shawarma">
+        <div class="menu-grid">
+          <article class="dish-card">
+            <span class="badge">Хит</span>
+            <div class="dish-emoji" aria-hidden="true">🌯</div>
+            <h3>Классическая</h3>
+            <p class="dish-desc">Курица, свежие овощи, чесночный соус, тонкий лаваш.</p>
+            <div class="dish-price">320 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🥩</div>
+            <h3>Мега мясная</h3>
+            <p class="dish-desc">Говядина и курица вдвойне, красный лук, соус барбекю.</p>
+            <div class="dish-price">420 ₽</div>
+          </article>
+          <article class="dish-card">
+            <span class="badge">Остро 🔥</span>
+            <div class="dish-emoji" aria-hidden="true">🌶️</div>
+            <h3>Острая «Огонь»</h3>
+            <p class="dish-desc">Курица, халапеньо, соус «Чили-манго» для смелых.</p>
+            <div class="dish-price">350 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🥬</div>
+            <h3>Вегетарианская</h3>
+            <p class="dish-desc">Фалафель, хумус, овощи гриль, кунжутный соус.</p>
+            <div class="dish-price">290 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🧒</div>
+            <h3>Мини для детей</h3>
+            <p class="dish-desc">Небольшая порция курицы без специй и лука.</p>
+            <div class="dish-price">220 ₽</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" role="tabpanel" id="pancakes" aria-labelledby="tab-pancakes">
+        <div class="menu-grid">
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🥞</div>
+            <h3>С ветчиной и сыром</h3>
+            <p class="dish-desc">Тонкий блин, ветчина, плавленый сыр, зелень.</p>
+            <div class="dish-price">180 ₽</div>
+          </article>
+          <article class="dish-card">
+            <span class="badge">Хит</span>
+            <div class="dish-emoji" aria-hidden="true">🐟</div>
+            <h3>С лососем</h3>
+            <p class="dish-desc">Слабосолёный лосось, сливочный сыр, укроп.</p>
+            <div class="dish-price">260 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🧀</div>
+            <h3>С творогом и изюмом</h3>
+            <p class="dish-desc">Домашний творог, изюм, сметана.</p>
+            <div class="dish-price">160 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🍯</div>
+            <h3>Со сгущёнкой</h3>
+            <p class="dish-desc">Классика детства: тонкий блин и белая сгущёнка.</p>
+            <div class="dish-price">130 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🎁</div>
+            <h3>Мешочек «Сюрприз»</h3>
+            <p class="dish-desc">Начинка на выбор шефа дня — всегда новая!</p>
+            <div class="dish-price">200 ₽</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" role="tabpanel" id="drinks" aria-labelledby="tab-drinks">
+        <div class="menu-grid">
+          <article class="dish-card">
+            <span class="badge">Хит</span>
+            <div class="dish-emoji" aria-hidden="true">☕</div>
+            <h3>Латте</h3>
+            <p class="dish-desc">Двойной эспрессо и мягкая молочная пена. Есть на овсяном.</p>
+            <div class="dish-price">150 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🥤</div>
+            <h3>Капучино</h3>
+            <p class="dish-desc">Классический рецепт, плотная пенка, корица по просьбе.</p>
+            <div class="dish-price">140 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🍵</div>
+            <h3>Чай чёрный / зелёный</h3>
+            <p class="dish-desc">Листовой чай, завариваем в чайнике 400 мл.</p>
+            <div class="dish-price">90 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🍋</div>
+            <h3>Домашний лимонад</h3>
+            <p class="dish-desc">Лимон, мята, лёд. Без сахара — по вашему желанию.</p>
+            <div class="dish-price">120 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🫐</div>
+            <h3>Морс клюквенный</h3>
+            <p class="dish-desc">Витаминный удар по осенней хандре. 400 мл.</p>
+            <div class="dish-price">110 ₽</div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-emoji" aria-hidden="true">🥛</div>
+            <h3>Молочный коктейль</h3>
+            <p class="dish-desc">Мороженое и сироп на выбор: клубника, шоколад, банан.</p>
+            <div class="dish-price">160 ₽</div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">🌯</span>
+        <span>Snack <em>Time</em></span>
+      </a>
+      <div class="footer-copy">© <span id="year">2025</span> Snack Time. Сделано с ❤️ и лавашом.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
