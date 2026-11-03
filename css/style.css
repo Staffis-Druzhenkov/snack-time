@@ -491,6 +491,16 @@ a:hover {
   gap: 20px;
 }
 
+.menu-subtitle {
+  margin: 34px 0 16px;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.menu-subtitle:first-child {
+  margin-top: 0;
+}
+
 .dish-card {
   position: relative;
   background: var(--surface);
